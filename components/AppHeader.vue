@@ -8,9 +8,10 @@
           </NuxtLink>
         </div>
         <nav class="nav" :class="{ active: isMenuOpen }">
+          <NuxtLink to="/lash" class="nav-link" @click="closeMenu">Наращивание ресниц</NuxtLink>
           <NuxtLink to="/brows-lamination" class="nav-link" @click="closeMenu">Брови и ламинирование</NuxtLink>
           <a href="#about" class="nav-link" @click="handleNavClick">О нас</a>
-          <a href="#services" class="nav-link" @click="handleNavClick">Услуги</a>
+          <a href="#gallery" class="nav-link" @click="handleNavClick">Галерея</a>
           <a href="#reviews" class="nav-link" @click="handleNavClick">Отзывы</a>
           <a href="#contact" class="nav-link" @click="handleNavClick">Контакты</a>
         </nav>

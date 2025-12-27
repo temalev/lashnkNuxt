@@ -4,8 +4,8 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1 class="hero-title">Идеальные ресницы<br>для идеального взгляда</h1>
-          <p class="hero-subtitle">Профессиональное наращивание ресниц<br>от опытных мастеров</p>
+          <h1 class="hero-title">Маленькая, но уютная студия<br>красоты в центре Рязани</h1>
+          <p class="hero-subtitle">Индивидуальный подход к каждому клиенту<br>и результат премиум-класса</p>
           <a href="https://dikidi.net/1538714" target="_blank" class="btn btn-primary">Записаться</a>
         </div>
       </div>
@@ -17,14 +17,14 @@
         <h2 class="section-title">О нас</h2>
         <div class="about-content">
           <div class="about-text">
-            <p>LashNK — это студия наращивания ресниц, где каждый клиент получает индивидуальный подход и результат премиум-класса.</p>
-            <p>Мы используем только качественные материалы и современные техники наращивания, чтобы ваши ресницы выглядели естественно и держались долго.</p>
+            <p>LashNK — это маленькая, но уютная студия красоты, где каждый клиент получает индивидуальный подход и результат премиум-класса.</p>
+            <p>Мы создали атмосферу, в которой вы можете расслабиться и довериться профессионалам. Наша студия — это место, где внимание к деталям и забота о клиенте стоят на первом месте.</p>
             <p class="location-info">Наша студия удобно расположена в центре города Рязань по адресу Соборная улица, 12. Легко добраться на любом транспорте!</p>
             <ul class="features">
               <li>✓ Опытные мастера</li>
               <li>✓ Премиум материалы</li>
               <li>✓ Индивидуальный подход</li>
-              <li>✓ Долговечный результат</li>
+              <li>✓ Уютная атмосфера</li>
               <li>✓ Удобное расположение в центре города</li>
             </ul>
           </div>
@@ -32,64 +32,22 @@
       </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services Preview Section -->
     <section class="services" id="services">
       <div class="container">
-        <h2 class="section-title">Услуги</h2>
+        <h2 class="section-title">Наши услуги</h2>
         
-        <!-- Наращивание ресниц -->
-        <div class="service-category">
-          <h3 class="category-title">Наращивание ресниц</h3>
-          <div class="services-grid">
-            <div class="service-card" v-for="service in lashServices" :key="service.name">
-              <h4>{{ service.name }}</h4>
-              <div class="service-info">
-                <span class="service-price">{{ service.price }} ₽</span>
-                <span class="service-time">{{ service.time }}</span>
-              </div>
-            </div>
+        <div class="services-preview">
+          <div class="service-preview-card">
+            <h3>Наращивание ресниц</h3>
+            <p>Классическое и объемное наращивание ресниц для идеального взгляда</p>
+            <NuxtLink to="/lash" class="btn btn-primary">Подробнее</NuxtLink>
           </div>
-        </div>
-
-        <!-- Комплексы -->
-        <div class="service-category">
-          <h3 class="category-title">Комплексы</h3>
-          <div class="services-grid">
-            <div class="service-card" v-for="service in complexServices" :key="service.name">
-              <h4>{{ service.name }}</h4>
-              <div class="service-info">
-                <span class="service-price">{{ service.price }} ₽</span>
-                <span class="service-time">{{ service.time }}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Ламинирование ресниц -->
-        <div class="service-category">
-          <h3 class="category-title">Ламинирование ресниц</h3>
-          <div class="services-grid">
-            <div class="service-card" v-for="service in laminationServices" :key="service.name">
-              <h4>{{ service.name }}</h4>
-              <div class="service-info">
-                <span class="service-price">{{ service.price }} ₽</span>
-                <span class="service-time">{{ service.time }}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Оформление бровей -->
-        <div class="service-category">
-          <h3 class="category-title">Оформление бровей</h3>
-          <div class="services-grid">
-            <div class="service-card" v-for="service in browServices" :key="service.name">
-              <h4>{{ service.name }}</h4>
-              <div class="service-info">
-                <span class="service-price">{{ service.price }} ₽</span>
-                <span class="service-time">{{ service.time }}</span>
-              </div>
-            </div>
+          
+          <div class="service-preview-card">
+            <h3>Ламинирование ресниц</h3>
+            <p>Профессиональное ламинирование и оформление бровей</p>
+            <NuxtLink to="/brows-lamination" class="btn btn-primary">Подробнее</NuxtLink>
           </div>
         </div>
       </div>
@@ -102,7 +60,7 @@
         <div class="gallery-grid">
           <div class="gallery-item" v-for="(image, index) in galleryImages" :key="index">
             <div class="gallery-image">
-              <img :src="image" :alt="`Наращивание ресниц пример ${index + 1}`" loading="lazy">
+              <img :src="image" :alt="`Пример работ ${index + 1}`" loading="lazy">
             </div>
           </div>
         </div>
@@ -162,44 +120,6 @@
 <script setup lang="ts">
 const reviews = useReviews()
 
-const lashServices = [
-  { name: 'Классическое наращивание 1D', price: 2000, time: '90 мин' },
-  { name: 'Объёмное наращивание 1,5D', price: 2100, time: '120 мин' },
-  { name: 'Объёмное наращивание 2D', price: 2200, time: '120 мин' },
-  { name: 'Объёмное наращивание 2,5D', price: 2300, time: '120 мин' },
-  { name: 'Объёмное наращивание 3D', price: 2400, time: '120 мин' },
-  { name: 'Объёмное наращивание 3,5D', price: 2500, time: '120 мин' },
-  { name: 'Мокрый эффект', price: 2200, time: '120 мин' },
-  { name: 'Полумокрый эффект', price: 2100, time: '120 мин' },
-  { name: 'Разреженный эффект', price: 2500, time: '120 мин' },
-  { name: 'Наращивание нижних ресниц', price: 1000, time: '30 мин' },
-  { name: 'Уголки', price: 1600, time: '60 мин' },
-  { name: 'Снятие без перенаращивания', price: 400, time: '15 мин' }
-]
-
-const complexServices = [
-  { name: 'Комплекс MINI', price: 1600, time: '110 мин' },
-  { name: 'Комплекс STANDART', price: 2700, time: '130 мин' },
-  { name: 'Комплекс MAXI', price: 3100, time: '165 мин' },
-  { name: 'Комплекс PREMIUM', price: 3600, time: '190 мин' }
-]
-
-const laminationServices = [
-  { name: 'Ламинирование верхних ресниц БЕЗ окрашивания', price: 1500, time: '60 мин' },
-  { name: 'Ламинирование верхних ресниц с окрашиванием', price: 1700, time: '75 мин' },
-  { name: 'Ламинирование верхних и нижних ресниц БЕЗ окрашивания', price: 1900, time: '95 мин' },
-  { name: 'Ламинирование верхних и нижних ресниц с окрашиванием', price: 2200, time: '100 мин' },
-  { name: 'Окрашивание ресниц БЕЗ ламинирования', price: 600, time: '30 мин' }
-]
-
-const browServices = [
-  { name: 'Коррекция (воск/пинцет)', price: 600, time: '30 мин' },
-  { name: 'КОРРЕКЦИЯ + ОКРАШИВАНИЕ', price: 1400, time: '50 мин' },
-  { name: 'ДОЛГОВРЕМЕННАЯ УКЛАДКА + КОРРЕКЦИЯ', price: 1800, time: '60 мин' },
-  { name: 'ДОЛГОВРЕМЕННАЯ УКЛАДКА + КОРРЕКЦИЯ + ОКРАШИВАНИЕ', price: 2100, time: '70 мин' },
-  { name: 'Эпиляция верхней губы', price: 300, time: '20 мин' }
-]
-
 const galleryImages = [
   '/example-images/21au9pqv7j.webp',
   '/example-images/316cr98us7.webp',
@@ -213,11 +133,11 @@ const galleryImages = [
 ]
 
 useSeoMeta({
-  title: 'Наращивание ресниц в Рязани | Профессиональное наращивание и ламинирование | LashNK',
-  description: 'LashNK - студия наращивания ресниц в Рязани. Классическое и объемное наращивание, ламинирование ресниц, оформление бровей. Удобное расположение на Соборной улице, 12. Запись онлайн.',
-  keywords: 'наращивание ресниц Рязань, ламинирование ресниц, объемное наращивание, LashNK, ресницы Рязань',
-  ogTitle: 'LashNK - Наращивание ресниц в Рязани',
-  ogDescription: 'Профессиональное наращивание и ламинирование ресниц в центре Рязани. Классическое и объемное наращивание, оформление бровей. Запись онлайн.',
+  title: 'LashNK - Студия красоты в Рязани | Наращивание ресниц и ламинирование',
+  description: 'LashNK - маленькая, но уютная студия красоты в центре Рязани. Наращивание ресниц, ламинирование, оформление бровей. Индивидуальный подход к каждому клиенту. Удобное расположение на Соборной улице, 12.',
+  keywords: 'студия красоты Рязань, наращивание ресниц, ламинирование ресниц, LashNK, ресницы Рязань',
+  ogTitle: 'LashNK - Студия красоты в Рязани',
+  ogDescription: 'Маленькая, но уютная студия красоты в центре Рязани. Наращивание ресниц, ламинирование, оформление бровей. Индивидуальный подход.',
   ogImage: 'https://lashnk.ru/og-image.jpg',
   ogUrl: 'https://lashnk.ru/',
   twitterCard: 'summary_large_image'
@@ -230,3 +150,54 @@ useHead({
 })
 </script>
 
+<style scoped>
+.services-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.service-preview-card {
+  background: var(--white);
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-preview-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.service-preview-card h3 {
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.service-preview-card p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .services-preview {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .service-preview-card {
+    padding: 2rem 1.5rem;
+  }
+}
+</style>
