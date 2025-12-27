@@ -25,6 +25,12 @@ export default defineNuxtConfig({
   
   // Настройка роутинга
   app: {
-    baseURL: '/lashnkNuxt/'
+    baseURL: '/lashnkNuxt/',
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/lashnkNuxt/favicon.ico' },
+        { rel: 'shortcut icon', type: 'image/x-icon', href: '/lashnkNuxt/favicon.ico' }
+      ]
+    }
   }
 })
