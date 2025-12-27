@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    // GitHub Pages 404 handler для Nuxt SSG
+    var path = window.location.pathname;
+    
+    // Список известных маршрутов без trailing slash
+    var knownRoutes = ['brows-lamination'];
+    
+    // Убираем начальный и конечный слеш для проверки
+    var pathClean = path.replace(/^\/|\/$/g, '');
+    var pathSegments = pathClean.split('/').filter(Boolean);
+    
+    // Если путь заканчивается на известный маршрут без trailing slash, добавляем его
+    if (pathSegments.length > 0 && knownRoutes.includes(pathSegments[pathSegments.length - 1])) {
+      window.location.replace(path + '/');
+    } else if (pathSegments.length === 0) {
+      // Если это корневой путь, остаемся на нем
+      window.location.replace('/');
+    } else {
+      // В противном случае пробуем загрузить как SPA (Nuxt router обработает)
+      window.location.replace('/');
+    }
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/">
+  </noscript>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
+
