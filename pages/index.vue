@@ -160,7 +160,7 @@
 </template>
 
 <script setup lang="ts">
-const reviews = await useReviews()
+const reviews = useReviews()
 
 const lashServices = [
   { name: 'Классическое наращивание 1D', price: 2000, time: '90 мин' },

@@ -116,7 +116,7 @@
 </template>
 
 <script setup lang="ts">
-const reviews = await useReviews()
+const reviews = useReviews()
 
 const laminationServices = [
   { name: 'Ламинирование верхних ресниц БЕЗ окрашивания', price: 1500, time: '60 мин' },
