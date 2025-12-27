@@ -24,6 +24,6 @@ export default defineNuxtConfig({
   
   // Настройка роутинга
   app: {
-    baseURL: '/'
+    baseURL: '/lashnkNuxt/'
   }
 })
