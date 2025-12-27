@@ -1,1 +1,36 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="/_nuxt/entry.okC2CheC.css" crossorigin><link rel="modulepreload" as="script" crossorigin href="/_nuxt/DeoBXCe6.js"><script type="module" src="/_nuxt/DeoBXCe6.js" crossorigin></script></head><body><div id="__nuxt"></div><div id="teleports"></div><script>window.__NUXT__={};window.__NUXT__.config={public:{},app:{baseURL:"/",buildId:"533481ca-5791-4813-be82-61721b729f15",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script><script type="application/json" data-nuxt-data="nuxt-app" data-ssr="false" id="__NUXT_DATA__">[{"prerenderedAt":1,"serverRendered":2},1766854717973,false]</script></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    // GitHub Pages 404 handler для Nuxt SSG
+    var path = window.location.pathname;
+    
+    // Список известных маршрутов без trailing slash
+    var knownRoutes = ['brows-lamination'];
+    
+    // Убираем начальный и конечный слеш для проверки
+    var pathClean = path.replace(/^\/|\/$/g, '');
+    var pathSegments = pathClean.split('/').filter(Boolean);
+    
+    // Если путь заканчивается на известный маршрут без trailing slash, добавляем его
+    if (pathSegments.length > 0 && knownRoutes.includes(pathSegments[pathSegments.length - 1])) {
+      window.location.replace(path + '/');
+    } else if (pathSegments.length === 0) {
+      // Если это корневой путь, остаемся на нем
+      window.location.replace('/');
+    } else {
+      // В противном случае пробуем загрузить как SPA (Nuxt router обработает)
+      window.location.replace('/');
+    }
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/">
+  </noscript>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
+
