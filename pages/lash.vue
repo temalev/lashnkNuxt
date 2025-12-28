@@ -12,7 +12,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="services" id="services">
+    <section class="services">
       <div class="container">
         <h2 class="section-title">Услуги</h2>
         
@@ -46,22 +46,9 @@
       </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="gallery" id="gallery">
-      <div class="container">
-        <h2 class="section-title">Примеры наших работ</h2>
-        <div class="gallery-grid">
-          <div class="gallery-item" v-for="(image, index) in galleryImages" :key="index">
-            <div class="gallery-image">
-              <img :src="image" :alt="`Наращивание ресниц пример ${index + 1}`" loading="lazy">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <section class="contact">
       <div class="container">
         <h2 class="section-title">Записаться на процедуру</h2>
         <div class="contact-content">

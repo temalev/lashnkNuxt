@@ -12,7 +12,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="about" id="about">
+    <section class="about">
       <div class="container">
         <h2 class="section-title">О нас</h2>
         <div class="about-content">
@@ -33,7 +33,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="services" id="services">
+    <section class="services">
       <div class="container">
         <h2 class="section-title">Наши услуги</h2>
         
@@ -67,31 +67,8 @@
       </div>
     </section>
 
-    <!-- Reviews Section -->
-    <section class="reviews" id="reviews">
-      <div class="container">
-        <h2 class="section-title">Отзывы наших клиентов</h2>
-        <div class="reviews-grid">
-          <div class="review-card" v-for="review in reviews" :key="review.name + review.date">
-            <div class="review-header">
-              <h4 class="review-name">{{ review.name }}</h4>
-              <span class="review-date">{{ review.date }}</span>
-            </div>
-            <div class="review-service">{{ review.service }}</div>
-            <div class="review-rating">
-              <span v-for="i in 5" :key="i" class="star" :style="{ color: i <= review.rating ? '#ffd700' : '#ddd' }">★</span>
-            </div>
-            <p class="review-comment">{{ review.comment }}</p>
-          </div>
-        </div>
-        <div class="reviews-actions">
-          <a href="https://dikidi.net/1538714?p=1.pi-pr&o=8" target="_blank" class="btn btn-primary">Читать все отзывы на DIKIDI</a>
-        </div>
-      </div>
-    </section>
-
     <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <section class="contact">
       <div class="container">
         <h2 class="section-title">Записаться на процедуру</h2>
         <div class="contact-content">
@@ -116,8 +93,6 @@
 </template>
 
 <script setup lang="ts">
-const reviews = useReviews()
-
 const laminationServices = [
   { name: 'Ламинирование верхних ресниц БЕЗ окрашивания', price: 1500, time: '60 мин' },
   { name: 'Ламинирование верхних ресниц с окрашиванием', price: 1700, time: '75 мин' },
