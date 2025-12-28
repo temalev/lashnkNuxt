@@ -2,6 +2,7 @@
   <div>
     <!-- Hero Section -->
     <section class="hero">
+      <HeroDecorations />
       <div class="container">
         <div class="hero-content">
           <h1 class="hero-title">Наращивание ресниц<br>для идеального взгляда</h1>

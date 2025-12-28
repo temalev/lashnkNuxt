@@ -2,6 +2,7 @@
   <div>
     <!-- Hero Section -->
     <section class="hero">
+      <HeroDecorations />
       <div class="container">
         <div class="hero-content">
           <h1 class="hero-title">Маленькая, но уютная студия<br>красоты в центре Рязани</h1>
@@ -189,6 +190,18 @@ useHead({
   line-height: 1.6;
   flex-grow: 1;
 }
+
+.figure {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+  width: 400px;
+  height: 500px;
+  background-color: red;
+  border-radius: 50%;
+  filter: blur(100px);
+}
+
 
 @media (max-width: 768px) {
   .services-preview {
