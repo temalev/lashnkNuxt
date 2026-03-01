@@ -15,18 +15,68 @@
     <!-- About Section -->
     <section class="about" id="about">
       <div class="container">
-        <h2 class="section-title">О нас</h2>
-        <div class="about-content">
-          <div class="about-text">
-            <p>LashNK — это маленькая, но уютная студия красоты, где каждый клиент получает индивидуальный подход и результат премиум-класса.</p>
-            <p>Мы создали атмосферу, в которой вы можете расслабиться и довериться профессионалам. Наша студия — это место, где внимание к деталям и забота о клиенте стоят на первом месте.</p>
-            <p class="location-info">Наша студия удобно расположена в центре города Рязань по адресу Соборная улица, 12. Легко добраться на любом транспорте!</p>
-            <ul class="features">
-              <li>✓ Опытные мастера</li>
-              <li>✓ Премиум материалы</li>
-              <li>✓ Индивидуальный подход</li>
-              <li>✓ Уютная атмосфера</li>
-              <li>✓ Удобное расположение в центре города</li>
+        <div class="about-header">
+          <span class="about-eyebrow">О студии</span>
+          <h2 class="about-title">Место, где мастерство<br>встречается с заботой</h2>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">лет опыта</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">довольных клиентов</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">5.0</span>
+            <span class="stat-label">средняя оценка</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">качественные материалы</span>
+          </div>
+        </div>
+
+        <div class="about-body">
+          <div class="about-text-col">
+            <p>LashNK — студия красоты в центре Рязани, где каждый визит становится личным. Мы работаем в камерном формате, без спешки и потока — только вы и мастер.</p>
+            <p>Здесь важен каждый нюанс: от выбора материалов до итогового результата. Мы не просто делаем ресницы — мы создаём образ, который подходит именно вам.</p>
+            <div class="about-location-block">
+              <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/>
+              </svg>
+              <span>Рязань, Соборная улица, 12 — в самом центре города</span>
+            </div>
+          </div>
+
+          <div class="about-features-col">
+            <ul class="features-premium">
+              <li class="feature-item">
+                <span class="feature-accent"></span>
+                <span class="feature-text">Опытные мастера</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-accent"></span>
+                <span class="feature-text">Премиум материалы</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-accent"></span>
+                <span class="feature-text">Индивидуальный подход</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-accent"></span>
+                <span class="feature-text">Уютная атмосфера</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-accent"></span>
+                <span class="feature-text">Удобное расположение</span>
+              </li>
             </ul>
           </div>
         </div>

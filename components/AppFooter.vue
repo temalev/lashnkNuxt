@@ -24,7 +24,7 @@
 <style scoped>
 .footer {
   background: var(--dark-color);
-  color: var(--white);
+  color: rgba(255,255,255,0.7);
   padding: 3rem 0 1rem;
 }
 
@@ -36,9 +36,12 @@
 }
 
 .footer-info h3 {
-  color: var(--primary-color);
+  color: var(--white);
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .footer-contact a {
@@ -58,8 +61,11 @@
 }
 
 .social-link {
-  color: var(--primary-color);
+  color: rgba(255,255,255,0.5);
   text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   transition: color 0.3s ease;
 }
 
@@ -70,33 +76,38 @@
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;
-  border-top: 1px solid #444;
-  color: #aaa;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.3);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
 }
 
 .sign-up {
   position: fixed;
-  bottom: 50px;
-  right: 50px;
-  border-radius: 50%;
-  background-color: var(--primary-color);
+  bottom: 40px;
+  right: 40px;
+  border-radius: 4px;
+  background-color: var(--dark-color);
   color: var(--white);
-  font-size: .8rem;
+  font-size: 0.65rem;
   font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  height: 100px;
-  width: 100px;
+  padding: 14px 22px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 4px 20px rgba(26, 24, 22, 0.25);
 }
 
 .sign-up:hover {
-  transform: scale(1.1);
-  box-shadow: var(--shadow-hover);
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(26, 24, 22, 0.3);
 }
 
 @media (max-width: 768px) {
@@ -111,10 +122,9 @@
   
   .sign-up {
     bottom: 20px;
-    right: 20px;
-    height: 80px;
-    width: 80px;
-    font-size: .6rem;
+    right: 16px;
+    font-size: 0.6rem;
+    padding: 12px 18px;
   }
 }
 </style>

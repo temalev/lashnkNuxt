@@ -29,18 +29,17 @@ interface Circle {
   duration: number
 }
 
-// Цвета из палитры сайта
 const colors = [
-  'rgba(244, 165, 199, 1)', // --primary-color с прозрачностью
-  'rgba(233, 30, 99, 1)',  // --secondary-color с прозрачностью
-  'rgba(255, 182, 193, 1)', // light pink
-  'rgba(255, 192, 203, 1)',  // pink
-  'rgba(255, 105, 180, 1)', // hot pink
-  'rgba(255, 20, 147, 1)',   // deep pink
-  'rgba(255, 182, 193, 1)',   // light pink более прозрачный
-  'rgba(244, 165, 199, 1)',  // primary более прозрачный
-  'rgba(255, 192, 203, 1)',  // pink более прозрачный
-  'rgba(233, 30, 99, 1)'      // secondary с другой прозрачностью
+  'rgba(196, 168, 130, 1)',
+  'rgba(139, 111, 78, 1)',
+  'rgba(210, 190, 163, 1)',
+  'rgba(196, 168, 130, 1)',
+  'rgba(224, 210, 190, 1)',
+  'rgba(180, 155, 120, 1)',
+  'rgba(215, 198, 175, 1)',
+  'rgba(196, 168, 130, 1)',
+  'rgba(230, 218, 200, 1)',
+  'rgba(139, 111, 78, 1)',
 ]
 
 const circles = ref<Circle[]>([])
@@ -51,13 +50,13 @@ const generateCircles = () => {
   
   for (let i = 0; i < 10; i++) {
     newCircles.push({
-      x: Math.random() * 100, // 0-100%
-      y: Math.random() * 100, // 0-100%
-      size: 40 + Math.random() * 80, // от 20px до 100px
+      x: Math.random() * 100,
+      y: Math.random() * 100,
+      size: 60 + Math.random() * 120,
       color: colors[Math.floor(Math.random() * colors.length)],
-      opacity: 0.2 + Math.random() * 0.3, // от 0.2 до 0.5
-      delay: Math.random() * 2, // задержка анимации 0-2 сек
-      duration: 15 + Math.random() * 10 // длительность 15-25 сек
+      opacity: 0.06 + Math.random() * 0.1,
+      delay: Math.random() * 3,
+      duration: 20 + Math.random() * 15
     })
   }
   

@@ -110,7 +110,7 @@ const isAnchorActive = (anchor: string) => {
 <style scoped>
 .header {
   background: var(--white);
-  box-shadow: var(--shadow);
+  border-bottom: 1px solid #EDE9E3;
   position: fixed;
   top: 0;
   width: 100%;
@@ -119,7 +119,7 @@ const isAnchorActive = (anchor: string) => {
 }
 
 .header.scrolled {
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 24px rgba(26, 24, 22, 0.07);
 }
 
 .header-content {
@@ -130,10 +130,11 @@ const isAnchorActive = (anchor: string) => {
 }
 
 .logo h1 {
-  font-size: 2rem;
-  color: var(--primary-color);
+  font-size: 1.6rem;
+  color: var(--dark-color);
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 
 .nav {
@@ -143,14 +144,17 @@ const isAnchorActive = (anchor: string) => {
 
 .nav-link {
   text-decoration: none;
-  color: var(--text-color);
+  color: #888;
   font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   transition: color 0.3s ease;
   position: relative;
 }
 
 .nav-link:hover {
-  color: var(--primary-color);
+  color: var(--dark-color);
 }
 
 .nav-link::after {
@@ -159,7 +163,7 @@ const isAnchorActive = (anchor: string) => {
   bottom: -5px;
   left: 0;
   width: 0;
-  height: 2px;
+  height: 1px;
   background: var(--primary-color);
   transition: width 0.3s ease;
 }
@@ -171,7 +175,7 @@ const isAnchorActive = (anchor: string) => {
 .nav-link.active,
 .nav-link.router-link-active,
 .nav-link.router-link-exact-active {
-  color: var(--primary-color);
+  color: var(--dark-color);
 }
 
 .nav-link.active::after,
