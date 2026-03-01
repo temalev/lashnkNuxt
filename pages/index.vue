@@ -4,10 +4,39 @@
     <section class="hero">
       <HeroDecorations />
       <div class="container">
-        <div class="hero-content">
-          <h1 class="hero-title">Маленькая, но уютная студия<br>красоты в центре Рязани</h1>
-          <p class="hero-subtitle">Индивидуальный подход к каждому клиенту<br>и результат премиум-класса</p>
-          <a href="https://dikidi.net/1538714" target="_blank" class="btn btn-primary">Записаться</a>
+        <div class="hero-inner">
+          <div class="hero-content">
+            <span class="hero-badge">Студия красоты · Рязань</span>
+            <h1 class="hero-title">
+              Маленькая,<br>
+              но <em class="hero-em">уютная</em><br>
+              студия красоты
+            </h1>
+            <p class="hero-subtitle">Индивидуальный подход к каждому клиенту и результат премиум-класса</p>
+            <div class="hero-actions">
+              <a href="https://dikidi.net/1538714" target="_blank" class="btn btn-primary">Записаться</a>
+              <a href="#about" class="hero-link">Узнать больше</a>
+            </div>
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <span class="hero-stat-num">5+</span>
+                <span class="hero-stat-label">лет опыта</span>
+              </div>
+              <div class="hero-stat-divider"></div>
+              <div class="hero-stat">
+                <span class="hero-stat-num">500+</span>
+                <span class="hero-stat-label">клиентов</span>
+              </div>
+              <div class="hero-stat-divider"></div>
+              <div class="hero-stat">
+                <span class="hero-stat-num">5.0</span>
+                <span class="hero-stat-label">рейтинг</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual-wrap">
+            <HeroVisual />
+          </div>
         </div>
       </div>
     </section>

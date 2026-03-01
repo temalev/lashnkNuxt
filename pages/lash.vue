@@ -4,16 +4,44 @@
     <section class="hero">
       <HeroDecorations />
       <div class="container">
-        <div class="hero-content">
-          <h1 class="hero-title">Наращивание ресниц в Рязани</h1>
-          <p class="hero-subtitle">Профессиональное наращивание ресниц<br>от опытных мастеров</p>
-          <a href="https://dikidi.net/1538714" target="_blank" class="btn btn-primary">Записаться</a>
+        <div class="hero-inner">
+          <div class="hero-content">
+            <span class="hero-badge">Наращивание ресниц · LashNK</span>
+            <h1 class="hero-title">
+              Наращивание<br>
+              ресниц в <em class="hero-em">Рязани</em>
+            </h1>
+            <p class="hero-subtitle">Профессиональное наращивание ресниц от опытных мастеров студии LashNK</p>
+            <div class="hero-actions">
+              <a href="https://dikidi.net/1538714" target="_blank" class="btn btn-primary">Записаться</a>
+              <a href="#services" class="hero-link">Посмотреть цены</a>
+            </div>
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <span class="hero-stat-num">12+</span>
+                <span class="hero-stat-label">техник</span>
+              </div>
+              <div class="hero-stat-divider"></div>
+              <div class="hero-stat">
+                <span class="hero-stat-num">500+</span>
+                <span class="hero-stat-label">клиентов</span>
+              </div>
+              <div class="hero-stat-divider"></div>
+              <div class="hero-stat">
+                <span class="hero-stat-num">5.0</span>
+                <span class="hero-stat-label">рейтинг</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual-wrap">
+            <HeroVisual />
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Services Section -->
-    <section class="services">
+    <section class="services" id="services">
       <div class="container">
         <h2 class="section-title">Услуги</h2>
         
