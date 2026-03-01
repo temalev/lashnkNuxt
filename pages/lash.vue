@@ -5,7 +5,7 @@
       <HeroDecorations />
       <div class="container">
         <div class="hero-content">
-          <h1 class="hero-title">Наращивание ресниц<br>для идеального взгляда</h1>
+          <h1 class="hero-title">Наращивание ресниц в Рязани</h1>
           <p class="hero-subtitle">Профессиональное наращивание ресниц<br>от опытных мастеров</p>
           <a href="https://dikidi.net/1538714" target="_blank" class="btn btn-primary">Записаться</a>
         </div>
