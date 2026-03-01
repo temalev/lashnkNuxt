@@ -9,7 +9,7 @@
         </div>
         <nav class="nav" :class="{ active: isMenuOpen }">
           <NuxtLink to="/lash" class="nav-link" @click="closeMenu">Наращивание ресниц</NuxtLink>
-          <NuxtLink to="/brows-lamination" class="nav-link" @click="closeMenu">Брови и ламинирование</NuxtLink>
+          <!-- <NuxtLink to="/brows-lamination" class="nav-link" @click="closeMenu">Брови и ламинирование</NuxtLink> -->
           <a href="#about" class="nav-link" :class="{ active: isAnchorActive('#about') }" @click="handleNavClick">О нас</a>
           <a href="#gallery" class="nav-link" :class="{ active: isAnchorActive('#gallery') }" @click="handleNavClick">Галерея</a>
           <a href="#reviews" class="nav-link" :class="{ active: isAnchorActive('#reviews') }" @click="handleNavClick">Отзывы</a>

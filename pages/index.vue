@@ -45,11 +45,6 @@
             <NuxtLink to="/lash" class="btn btn-primary">Подробнее</NuxtLink>
           </div>
           
-          <div class="service-preview-card">
-            <h3>Ламинирование ресниц</h3>
-            <p>Профессиональное ламинирование и оформление бровей</p>
-            <NuxtLink to="/brows-lamination" class="btn btn-primary">Подробнее</NuxtLink>
-          </div>
         </div>
       </div>
     </section>
