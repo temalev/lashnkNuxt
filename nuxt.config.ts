@@ -15,8 +15,7 @@ export default defineNuxtConfig({
       // Явно указать маршруты для пререндеринга (опционально)
       routes: [
         '/',
-        '/lash',
-        '/brows-lamination'
+        '/lash'
       ]
     },
     // Минификация для продакшена
