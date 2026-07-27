@@ -14,8 +14,7 @@ export default defineNuxtConfig({
       crawlLinks: true,
       // Явно указать маршруты для пререндеринга (опционально)
       routes: [
-        '/',
-        '/lash'
+        '/'
       ]
     },
     // Минификация для продакшена
