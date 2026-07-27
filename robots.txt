@@ -1,2 +1,7 @@
-User-Agent: *
-Disallow:
+User-agent: *
+Allow: /
+Disallow: /lash
+Disallow: /brows-lamination
+
+Host: lashnk.ru
+Sitemap: https://lashnk.ru/sitemap.xml
